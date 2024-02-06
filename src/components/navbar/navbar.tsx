@@ -4,9 +4,7 @@ import "./navbar.css";
 export default function Navbar() {
 	return (
 		<nav id="navbar">
-			<div className="logo">
-				<Rocket />
-			</div>
+			<Rocket className="logo" />
 			<ul className="nav-links">
 				<li className="nav-link">
 					<a href="#">Home</a>
