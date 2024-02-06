@@ -1,5 +1,43 @@
+:root {
+	--text: #f1eff3;
+	--background-color: #0b090c;
+	--navbar-color: #161218;
+	--navbar-hover: #242027;
+	--navbar-shadow: #252327;
+	--primary: #beb4c7;
+	--secondary: #54465d;
+	--accent: #9784a3;
+	--logo: #9675a5;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--secondary);
+	border-radius: 5px;
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 200vh;
+	background-color: var(--background-color);
+}
+
+#container {
+	height: 100%;
+	padding: 2rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
