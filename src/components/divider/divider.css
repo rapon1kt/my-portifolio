@@ -1,0 +1,13 @@
+#divider-container {
+	width: 80%;
+	display: flex;
+	margin-block: 1rem;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#divider-container > .divider {
+	width: 40%;
+	border: var(--navbar-hover) 2px solid;
+	border-radius: 12px;
+}
