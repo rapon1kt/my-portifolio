@@ -1,5 +1,6 @@
-import type { Metadata } from "next";
 import { Dosis } from "next/font/google";
+import { Preloader } from "@/components";
+import type { Metadata } from "next";
 import "./globals.css";
 
 const dosis = Dosis({ subsets: ["latin"] });
@@ -16,7 +17,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="pt-br">
-			<body className={dosis.className}>{children}</body>
+			<body className={dosis.className}>
+				{children ? children : <Preloader />}
+			</body>
 		</html>
 	);
 }
