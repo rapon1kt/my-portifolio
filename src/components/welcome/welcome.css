@@ -1,0 +1,167 @@
+#Welcome {
+	width: 80%;
+	height: 70vh;
+	display: flex;
+	margin-top: 2rem;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#Welcome > .left-corner {
+	height: 100%;
+	width: 33.3%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#Welcome > .left-corner > .chip > p {
+	font-size: 18px;
+	font-weight: 500;
+	color: var(--text);
+}
+
+#Welcome > .left-corner > h1 {
+	font-size: 50px;
+	font-weight: 700;
+	color: var(--logo);
+}
+#Welcome > .left-corner > p {
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 1rem;
+	color: var(--text);
+	font-family: "Roboto Mono", monospace;
+}
+
+#Welcome > .left-corner > .social {
+	gap: 1.5rem;
+	height: 30px;
+	display: flex;
+	margin-top: 1rem;
+	align-items: center;
+}
+
+#Welcome > .left-corner > .social > .social-link,
+.social-icon {
+	color: var(--text);
+	transition: all ease 0.3s;
+}
+
+#Welcome > .left-corner > .social > .social-link:hover > .social-icon {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+#Welcome > .left-corner > .social > .dot {
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: var(--text);
+}
+
+#Welcome > .left-corner > .social > .dot:last-child {
+	display: none;
+}
+
+#Welcome > .middle-corner {
+	height: 100%;
+	width: 33.3%;
+}
+
+#Welcome > .middle-corner > #blob {
+	left: 50%;
+	top: 50%;
+	opacity: 0.8;
+	height: 24vmax;
+	aspect-ratio: 1;
+	position: absolute;
+	translate: -50% -50%;
+	background-color: white;
+	box-shadow: var(--logo) 0px 0px 1rem;
+	animation: square-to-circle 5s infinite;
+	background: linear-gradient(
+		to right,
+		mediumpurple,
+		var(--accent),
+		rgb(159, 207, 226)
+	);
+}
+
+#Welcome > .middle-corner > #picture {
+	left: 50%;
+	top: 50%;
+	height: 22.5vmax;
+	aspect-ratio: 1;
+	position: absolute;
+	border-radius: 50%;
+	translate: -50% -50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation: change-format 5s infinite;
+	background-image: url("/assets/raponikt.jpg");
+}
+
+#Welcome > .right-corner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 33.3%;
+}
+
+#Welcome > .right-corner > .email-button {
+	width: 15rem;
+	outline: none;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 1rem 2rem;
+	color: var(--logo);
+	border-radius: 40px;
+	transition: all ease 0.3s;
+	border-top: black solid 2px;
+	border: var(--accent) 2px solid;
+	background-color: transparent;
+}
+
+#Welcome > .right-corner > .email-button:hover {
+	box-shadow: var(--primary) 0px 0px 10px;
+	cursor: pointer;
+}
+
+@keyframes square-to-circle {
+	0% {
+		border-radius: 50%;
+		transform: rotate(0deg);
+	}
+	25% {
+		border-radius: 30% 50% 30% 50%;
+		transform: rotate(90deg);
+	}
+	50% {
+		border-radius: 30% 30% 30% 30%;
+		transform: rotate(180deg);
+	}
+	100% {
+		border-radius: 50%;
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes change-format {
+	0% {
+		border-radius: 50%;
+	}
+
+	25% {
+		border-radius: 50% 30% 50% 30%;
+	}
+	50% {
+		border-radius: 30% 30% 30% 30%;
+	}
+	100% {
+		border-radius: 50%;
+	}
+}
