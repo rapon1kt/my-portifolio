@@ -165,3 +165,61 @@
 		border-radius: 50%;
 	}
 }
+
+@media screen and (max-width: 1040px) {
+	#Welcome {
+		margin-top: 0;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 84vh;
+		gap: 2rem;
+	}
+
+	#Welcome > .middle-corner > #blob {
+		top: 41%;
+		height: 31vmax;
+	}
+
+	#Welcome > .middle-corner > #picture {
+		top: 41%;
+		height: 28.5vmax;
+	}
+
+	#Welcome > .left-corner {
+		text-align: center;
+		width: 100%;
+		height: auto;
+	}
+
+	#Welcome .right-corner {
+		text-align: center;
+		width: 100%;
+		height: auto;
+	}
+
+	#Welcome > .left-corner {
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 737px) {
+	#Welcome > .middle-corner > #blob {
+		height: 36vmax;
+	}
+
+	#Welcome > .middle-corner > #picture {
+		height: 33.5vmax;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#Welcome > .middle-corner > #blob {
+		top: 37%;
+		height: 31vmax;
+	}
+
+	#Welcome > .middle-corner > #picture {
+		top: 37%;
+		height: 28.5vmax;
+	}
+}

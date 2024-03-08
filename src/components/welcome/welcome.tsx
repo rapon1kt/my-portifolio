@@ -3,8 +3,11 @@ import Social from "./social-component/social-component";
 import socialMedia from "@/data/social";
 import { useEffect } from "react";
 import "./welcome.css";
+import { useMediaQuery } from "@mui/material";
 
 export default function Welcome() {
+	const media = useMediaQuery(`(max-width: 1040px)`);
+
 	const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	let interval: any;
@@ -56,6 +59,13 @@ export default function Welcome() {
 
 	return (
 		<main id="Welcome">
+			{media && (
+				<div className="middle-corner">
+					<div id="blob"></div>
+					<div id="blur"></div>
+					<div id="picture"></div>
+				</div>
+			)}
 			<div className="left-corner">
 				<div className="chip">
 					<p id="chip-text">Welcome to</p>
@@ -68,11 +78,13 @@ export default function Welcome() {
 					))}
 				</div>
 			</div>
-			<div className="middle-corner">
-				<div id="blob"></div>
-				<div id="blur"></div>
-				<div id="picture"></div>
-			</div>
+			{!media && (
+				<div className="middle-corner">
+					<div id="blob"></div>
+					<div id="blur"></div>
+					<div id="picture"></div>
+				</div>
+			)}
 			<div className="right-corner">
 				<button className="email-button">Send me an email!</button>
 			</div>
