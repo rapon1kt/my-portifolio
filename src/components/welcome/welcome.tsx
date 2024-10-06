@@ -74,7 +74,7 @@ export default function Welcome() {
 				<p>16y, Full-Stack Developer</p>
 				<div className="social">
 					{socialMedia.map((media) => (
-						<Social Icon={media.icon} link={media.link} />
+						<Social Icon={media.icon} link={media.link} key={media.link} />
 					))}
 				</div>
 			</div>
