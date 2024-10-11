@@ -6,6 +6,7 @@
     min-height: 80vh;
     flex-direction: row;
     padding-block: 1rem;
+    text-align: justify;
 }
 
 #about-me > .left-corner > .about-me-title {
@@ -44,12 +45,11 @@
     display: flex;
     padding: 1rem;
     flex-direction: column;
-    align-items: center;
 }
 
 #about-me > .left-corner >  .list > .hobbies{
     list-style: none;
-    color: var(--text)
+    color: var(--text);
 }
 
 #about-me > .left-corner >  .list .heart {
@@ -75,7 +75,7 @@
 @media screen and (max-width: 1040px) {
 
     #about-me {
-        text-align: center;
+        text-align: justify;
     }
 
     #about-me > .left-corner {
@@ -83,10 +83,6 @@
     }
 
     #about-me > .left-corner > .about-me-title {
-        justify-content: center;
-    }
-
-    #about-me > .left-corner > .list {
         justify-content: center;
     }
 
