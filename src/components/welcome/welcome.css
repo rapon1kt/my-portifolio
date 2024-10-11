@@ -175,14 +175,19 @@
 		gap: 2rem;
 	}
 
+	#Welcome > .middle-corner {
+		height: 50%;
+	}
+
+
 	#Welcome > .middle-corner > #blob {
-		top: 41%;
-		height: 31vmax;
+		height: 36vmax;
+		top: 40%;
 	}
 
 	#Welcome > .middle-corner > #picture {
-		top: 41%;
-		height: 28.5vmax;
+		height: 33.5vmax;
+		top: 40%;
 	}
 
 	#Welcome > .left-corner {
@@ -208,23 +213,14 @@
 		width: 100%;
 	}
 
-	#Welcome > .middle-corner > #blob {
-		height: 36vmax;
-	}
-
-	#Welcome > .middle-corner > #picture {
-		height: 33.5vmax;
-	}
 }
 
 @media screen and (max-width: 400px) {
 	#Welcome > .middle-corner > #blob {
-		top: 37%;
-		height: 31vmax;
+		height: 32vmax;
 	}
 
 	#Welcome > .middle-corner > #picture {
-		top: 37%;
-		height: 28.5vmax;
+		height: 30.5vmax;
 	}
 }
