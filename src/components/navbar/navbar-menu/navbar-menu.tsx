@@ -26,13 +26,8 @@ function NavbarMenu() {
     <Dropdown>
       <MenuButton
         sx={{
-          transition: "all ease-in 0.2s",
           border: "none",
-          ":hover": {
-            backgroundColor: "#161218",
-            borderRadius: "50%",
-            padding: "1rem",
-          },
+          ":hover": {backgroundColor: "#242027"}
         }}
       >
         <MenuIcon color="#9675a5" />
@@ -42,7 +37,7 @@ function NavbarMenu() {
           <MenuItem
             sx={{
               fontFamily: "Dosis",
-			  fontWeight: 600,
+			        fontWeight: 600,
               color: "#f1eff3",
               ":hover": { backgroundColor: "#161218" },
             }}
