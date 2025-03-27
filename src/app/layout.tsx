@@ -8,6 +8,7 @@ const dosis = Dosis({ subsets: ["latin"] });
 export const metadata: Metadata = {
 	title: "Portifolio",
 	description: "Create by raponikt",
+	icons: ["assets/favicon.ico"],
 };
 
 export default function RootLayout({
