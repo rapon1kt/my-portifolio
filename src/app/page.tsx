@@ -1,4 +1,5 @@
 import { Navbar, Welcome, AboutMe } from "@/components";
+import Skills from "@/components/skills/skills";
 
 export default function Home() {
 	return (
@@ -6,6 +7,7 @@ export default function Home() {
 			<Navbar />
 			<Welcome />
 			<AboutMe />
+			<Skills />
 		</div>
 	);
 }
