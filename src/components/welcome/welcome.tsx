@@ -71,7 +71,7 @@ export default function Welcome() {
 					<p id="chip-text">Welcome to</p>
 				</div>
 				<h1 data-value="Gustavo Raponi">My Portifolio!</h1>
-				<p>16y, Full-Stack Developer</p>
+				<p>18y, Full-Stack Developer</p>
 				<div className="social">
 					{socialMedia.map((media) => (
 						<Social Icon={media.icon} link={media.link} key={media.link} />
