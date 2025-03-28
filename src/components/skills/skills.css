@@ -155,12 +155,17 @@
 	}
 
 	#skills > .blob {
-		opacity: 0.8;
-		width: 80%;
-		left: 2rem;
+		opacity: 0.7;
+		height: 60%;
 		bottom: -100rem;
 		margin-top: 10rem;
 		animation: none;
 		border-radius: 60% 40% 30% 70%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#skills {
+		width: 100%;
 	}
 }
