@@ -7,7 +7,7 @@ const dosis = Dosis({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Portifolio",
-	description: "Create by raponikt",
+	description: "Created by raponikt",
 	icons: ["assets/favicon.ico"],
 };
 
