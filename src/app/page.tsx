@@ -1,5 +1,4 @@
-import { Navbar, Welcome, AboutMe } from "@/components";
-import Skills from "@/components/skills/skills";
+import { Navbar, Welcome, AboutMe, Skills } from "@/components";
 
 export default function Home() {
 	return (
