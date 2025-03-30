@@ -7,6 +7,7 @@
 	flex-direction: row;
 	padding-block: 1rem;
 	text-align: justify;
+	align-items: center;
 	justify-content: space-between;
 }
 
@@ -65,9 +66,10 @@
 #skills > .right-corner {
 	padding-top: 5rem;
 	display: grid;
-	justify-content: center;
+	justify-content: space-around;
+	gap: 1rem;
 	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: 25% 25%;
+	grid-template-rows: 50% 50%;
 	animation: hidden 15s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 	width: 50%;
 }
