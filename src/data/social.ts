@@ -41,3 +41,14 @@ export const languages = [
 		name: "CSS",
 	},
 ];
+
+export const projects = [
+	{
+		github: "https://github.com/rapon1kt/medinik",
+		link: "https://medinik.vercel.app",
+		src: "medinik-icon.png",
+		description:
+			"Medinik is a front-end web application built with Next.js and Material-UI (MUI) that provides a seamless and responsive user experience for displaying information. It features basic authentication to ensure secure access. While the front-end handles the user interface, the application relies on an outsourced back-end for data storage and management. The back-end is built with Express.js and MongoDB, offering a robust and scalable solution for handling user data and other essential information.",
+		name: "Medinik",
+	},
+];
