@@ -17,11 +17,6 @@
 	font-family: "Roboto Mono", monospace;
 }
 
-#about-me > .corners {
-	display: flex;
-	flex-direction: row;
-}
-
 #about-me > .left-corner {
 	width: 50%;
 	display: flex;
