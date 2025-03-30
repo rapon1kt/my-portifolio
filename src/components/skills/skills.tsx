@@ -1,34 +1,8 @@
 import React from "react";
 import "./skills.css";
 import { Typography } from "@mui/joy";
-import { ArrowBigRight, ArrowDown, Hash, Heart } from "lucide-react";
-
-const languages = [
-	{
-		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-		name: "Javascript",
-	},
-	{
-		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-		name: "Typescript",
-	},
-	{
-		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
-		name: "Java",
-	},
-	{
-		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-		name: "Python",
-	},
-	{
-		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-		name: "HTML5",
-	},
-	{
-		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-		name: "CSS",
-	},
-];
+import { ArrowBigRight, ArrowDown, Hash } from "lucide-react";
+import { languages } from "@/data/social";
 
 export default function Skills() {
 	return (

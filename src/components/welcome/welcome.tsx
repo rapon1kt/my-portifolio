@@ -1,6 +1,6 @@
 "use client";
 import Social from "./social-component/social-component";
-import socialMedia from "@/data/social";
+import { socialMedia } from "@/data/social";
 import { useEffect } from "react";
 import "./welcome.css";
 import { useMediaQuery } from "@mui/material";
