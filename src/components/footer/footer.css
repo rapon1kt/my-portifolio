@@ -1,0 +1,12 @@
+#footer {
+	display: flex;
+	height: 10vh;
+	margin-top: 4rem;
+	align-items: center;
+	justify-content: center;
+}
+
+#footer > .footer-title {
+	color: var(--accent);
+	font-family: "Josefin Sans", sans-serif;
+}
